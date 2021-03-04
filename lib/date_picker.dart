@@ -144,9 +144,12 @@ class DatePicker {
     if (textColor == null) textColor = DateTimePickerTheme.Default.itemTextStyle.color;
 
     var datePickerDialog = AlertDialog(
-      title: Text(
-        titleText ?? "Select Date",
-        style: TextStyle(color: textColor),
+      title: Center(
+        child: Text(
+          titleText ?? "Select Date",
+          textAlign: TextAlign.center,
+          style: TextStyle(color: textColor),
+        ),
       ),
       contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 14),
       backgroundColor: backgroundColor,
